@@ -1,0 +1,8 @@
+# Junk files
+**/.DS_Store
+
+# Build artifacts
+**/*.o
+
+# User specific
+.vscode/
