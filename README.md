@@ -20,11 +20,10 @@ The core of this project lies in creating `n` child processes for `n` commands, 
 
 ## Usage
 ```bash
+# With pipex
 ./pipex input cmd0 cmd1 ... cmdn output
-```
 
-#### Bash equivalent
-```bash
+# Bash equivalent
 cmd0 < input | cmd1 | cmd2 ... | cmdn > output
 ```
 
