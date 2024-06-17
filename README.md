@@ -32,11 +32,10 @@ cmd0 < input | cmd1 | cmd2 ... | cmdn > output
 #### Alphabetical sorting and filtering
 Sorts alphabetically the content of the input  file and outputs the first three lines.
 ```bash
+# With pipex
 ./pipex input sort "head -n 3" > output
-```
 
-##### Bash equivalent
-```bash
+# Bash equivalent
 sort < input | head -n 3 > output
 ```
 
@@ -45,11 +44,10 @@ Filters lines containing the word "example" from the input file and counts the n
 
 
 ```bash
+# With pipex
 ./pipex input "grep example" "wc -l" output
-```
 
-##### Bash equivalent
-```bash
+# Bash equivalent
 grep example < input | wc -l > output
 ````
 
